@@ -37,7 +37,7 @@ d3.csv("assets/data/data.csv").then(function (healthData) {
         .range([0, width]);
 
     var yLinearScale = d3.scaleLinear()
-        .domain([0, d3.max(healthData, d => d.smokes)])
+        .domain([6, d3.max(healthData, d => d.smokes)])
         .range([height, 0]);
 
     // Step 3: Create axis functions
@@ -65,12 +65,14 @@ d3.csv("assets/data/data.csv").then(function (healthData) {
         .attr("r", "15")
         .attr("fill", "blue")
         .attr("opacity", ".5")
+        
 
     // Step 6: Initialize tool tip
     // ==============================
     var toolTip = d3.tip()
-        .attr("class", "d3.tip") // style
-        .offset([1, 1]) // placement
+        .attr("class", "d3-tip") // style
+        
+        // .offset([80, -60]) // placement
         .html((d) => {  // struction/content
             return (`${d.abbr}`)
         })
