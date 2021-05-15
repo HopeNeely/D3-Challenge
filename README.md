@@ -1,27 +1,26 @@
-# D3-Challenge: Data Journalism and D3
+# D3-Challenge
 
-![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
+This analysis of trends in factors shaping health outcomes is displayed with a D3.js scatter plot with interactive elements. The data set included is based on 2014 ACS 1-year estimates from the [US Census Bureau](https://data.census.gov/cedsci/). The data set includes data on rates of income, obesity, poverty, etc. by state. 
 
-## Background
+## Data
 
-Here the goal is to analyze the current trends shaping people's lives, as well as creating charts, graphs, and interactive elements to help Newspaper readers understand your findings.
-
-I will run a series of feature stories about the health risks facing particular demographics. I will sniff out the first story idea by sifting through information from the U.S. Census Bureau and the Behavioral Risk Factor Surveillance System.
-
-The data set included is based on 2014 ACS 1-year estimates from the [US Census Bureau](https://data.census.gov/cedsci/), but you are free to investigate a different data set. The current data set includes data on rates of income, obesity, poverty, etc. by state. MOE stands for "margin of error."
-
-### D3
-
-![Scatter](D3_data_journalism/assets/Images/4-scatter.jpg)
+[https://data.census.gov/cedsci/](https://data.census.gov/cedsci/)
 
 
-* Include state abbreviations in the circles.
-* Create and situate your axes and labels to the left and bottom of the chart.
-* Note: You'll need to use `python -m http.server` to run the visualization. This will host the page at `localhost:8000` in your web browser.
+## Instructions to run code
+1. Download or clone repository.
+2. Open app.js in VScode.
+3. Open integrated terminal and run "python -m http.server" there.
+4. View the index.html at "localhost:8000" in your web browser. 
+
 
 - - -
+## Analysis
+Currently, this file runs a static scatter plot showing the relationship between poverty and smoking rates. Soon, I will update the scatter plot to show multiple view for the user to interact with. 
 
-### Bonus: Impress the Boss (Optional Assignment)
+---
+
+### Bonus:(Optional)
 
 Why make a static graphic when D3 lets you interact with your data?
 
@@ -43,24 +42,5 @@ While the ticks on the axes allow us to infer approximate values for each circle
 
 - - -
 
-### Assessment
-
-Your final product will be assessed on the following metrics:
-
-* Creation of a **new** repository on GitHub called `D3-Challenge` (note the kebab-case). Do not add to an already existing repo.
-
-* Completion of all steps in the core assignment
-
-* Coherency of scatter plot (labels, ticks)
-
-* Visual attraction
-
-* Professionalism
 
 * Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
-
-**Good luck!**
-
-### Copyright
-
-Trilogy Education Services © 2019. All Rights Reserved.
